@@ -130,13 +130,13 @@ def edit_user(token, payload):
     return response.status_code
 
 def login(email):
-    clear_output()
+    
     password=getpass("Password: ")
     user = login_user(email, password) 
     return user
 
 def register():
-    clear_output()
+    
     print("Registration:")
     email = input("Email: ")
     first_name = input("First Name: ")
@@ -155,7 +155,7 @@ def do_login_user():
     #name = login_user(email, password)
  
     while True:
-        clear_output()
+        
         print("Welcome to the Bookstore")
         email = input("Type your email to login or Type `register` to Register ")
         if email == 'register':
